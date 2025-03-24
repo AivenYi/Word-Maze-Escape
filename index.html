@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Maze Escape</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div id="timer">Time: 180</div>
+            <div id="score">Score: 0</div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div class="word-prompt" id="wordPrompt" style="display: none;">
+            <h2>Spell the word:</h2>
+            <h3 id="currentWord"></h3>
+            <input type="text" id="wordInput" placeholder="Type the word...">
+            <div class="controls">
+                <button id="submitBtn">Submit</button>
+                <button id="voiceBtn">🎤</button>
+            </div>
+        </div>
+        <button id="startBtn">Start Game</button>
+    </div>
+    <script src="words.js"></script>
+    <script src="game.js"></script>
+    <script>
+        // 添加错误处理，忽略 chrome-error 协议错误
+        window.onerror = function(msg, url, lineNo, columnNo, error) {
+            // 忽略 chrome-error 协议相关的错误
+            if (url && url.startsWith('chrome-error://')) {
+                return true;
+            }
+            
+            // 记录其他错误
+            console.error('Error: ' + msg + '\nURL: ' + url + '\nLine: ' + lineNo + '\nColumn: ' + columnNo + '\nError object: ' + JSON.stringify(error));
+            return false;
+        };
+    </script>
+</body>
+</html> 

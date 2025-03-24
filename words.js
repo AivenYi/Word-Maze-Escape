@@ -1,0 +1,22 @@
+const wordList = [
+    { english: "apple", chinese: "苹果" },
+    { english: "book", chinese: "书本" },
+    { english: "cat", chinese: "猫" },
+    { english: "dog", chinese: "狗" },
+    { english: "elephant", chinese: "大象" },
+    { english: "flower", chinese: "花" },
+    { english: "guitar", chinese: "吉他" },
+    { english: "house", chinese: "房子" },
+    { english: "ice", chinese: "冰" },
+    { english: "jacket", chinese: "夹克" },
+    { english: "king", chinese: "国王" },
+    { english: "lion", chinese: "狮子" },
+    { english: "moon", chinese: "月亮" },
+    { english: "night", chinese: "夜晚" },
+    { english: "orange", chinese: "橙子" },
+    { english: "pencil", chinese: "铅笔" },
+    { english: "queen", chinese: "女王" },
+    { english: "rain", chinese: "雨" },
+    { english: "sun", chinese: "太阳" },
+    { english: "tree", chinese: "树" }
+]; 
